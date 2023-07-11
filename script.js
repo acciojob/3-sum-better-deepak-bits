@@ -3,7 +3,7 @@ function threeSum(arr, target) {
 	// -1 1 2 4
 	const n = arr.length;
 	let closestSum = 0;
-	let diff = Integer.MAX_VALUE;
+	let diff = Number.POSITIVE_INFINITY;
 	arr.sort();
 	for(let i = 0; i < n-2; i++) {
 		if(i > 0 && arr[i] === arr[i-1]) continue;
